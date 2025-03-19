@@ -18,7 +18,10 @@ This project implements a Book Recommender System using Neural Collaborative Fil
 Built using TensorFlow/Keras with:  
 - MF Layer: Embeddings & dot product.  
 - MLP Layer: Concatenated embeddings → Dense(8, ReLU) → Dense(4, ReLU).  
-- Prediction: MF & MLP outputs → Sigmoid activation.  
+- Prediction: MF & MLP outputs → Sigmoid activation.
+- Class Imbalance Handling:  
+  - Positive ratings (1s) were weighted higher to improve learning.  
+  - Dynamic sample weighting was applied to ensure better prediction of relevant interactions.   
 
 ## Performance  
  
